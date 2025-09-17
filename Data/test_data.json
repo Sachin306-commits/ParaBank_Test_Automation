@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "user_first_name": "Sachin",
+      "user_second_name": "Kumar Tiwari",
+      "user_address": "Janta Bazar",
+      "user_city": "Chapra",
+      "user_state": "Bihar",
+      "user_zip_code": "841224",
+      "user_phone_no": "7903809668",
+      "user_ssn": "123-45-6789",
+      "user_name_1": "Sachin121111@",
+      "user_password": "Sachin306@",
+      "user_confirm_password": "Sachin306@",
+      "send_money": "10000"
+
+    }
+
+  ],
+  "Wrong_credentials":
+          [
+            {
+              "wrong_username":"sa40086307@gmail.com",
+              "wrong_password": "Sachin306@"
+
+            }
+          ]
+}
