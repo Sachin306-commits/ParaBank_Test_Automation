@@ -4,7 +4,7 @@ import time
 import pytest
 from Utils.locators import Locators
 from Utils.selenium_helpers import safe_click, safe_get_text
-from Page_Pom.register import Register
+from Page_Pom.Positive_POM.register import Register
 
 
 test_data_path = r'C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Data\test_data.json'

@@ -4,39 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb10e08d-4a57-45f5-81bc-fb72e8fe2bd5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Automation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/test_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Page_Pom/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Page_Pom/account_overview.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Page_Pom/forgot_account.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Page_Pom/forgot_account_with_new_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Page_Pom/login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Page_Pom/login_with_wrong_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Page_Pom/register.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Page_Pom/register_with_existing_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Page_Pom/transfer_funds.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/test_account_overview.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/test_forgot_account.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/test_forgot_account_with_new_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/test_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/test_login_with_wrong_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/test_register.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/test_register_with_existing_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/test_transfer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utils/locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utils/selenium_helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_e2e.py" afterDir="false" />
+    <list default="true" id="bb10e08d-4a57-45f5-81bc-fb72e8fe2bd5" name="Changes" comment="Para_bank">
+      <change afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/bill_pay.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/contact_us.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/request_loan.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Negative_Testing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Positive_Testing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_bill_pay.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_contact_us.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_request_loan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/test_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/test_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/account_overview.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/account_overview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/bill_pay.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Negative_POM/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/forgot_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/forgot_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/forgot_account_with_new_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Negative_POM/forgot_account_with_new_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/login_with_wrong_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Negative_POM/login_with_wrong_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/open_checking_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/open_checking_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/open_saving_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/open_saving_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/register_with_existing_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Negative_POM/register_with_existing_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/transfer_funds.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/transfer_funds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_account_overview.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_account_overview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_checking_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_checking_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_forgot_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_forgot_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_forgot_account_with_new_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Negative_Testing/test_forgot_account_with_new_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_login_with_wrong_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Negative_Testing/test_login_with_wrong_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_open_saving_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_open_saving_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_register_with_existing_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Negative_Testing/test_register_with_existing_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_transfer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_transfer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +69,15 @@
   "keyToString": {
     "Python tests.Python tests in test_register.py.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Sachin Kumar Tiwari/PycharmProjects"
+    "last_opened_file_path": "C:/Users/Sachin Kumar Tiwari/PycharmProjects/ParaBank_Testing/Page_Pom/Positive_POM"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Page_Pom\Positive_POM" />
+      <recent name="C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Page_Pom\Negative_POM" />
+      <recent name="C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Tests\Positive_Testing" />
+      <recent name="C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Tests\Negative_Testing" />
       <recent name="C:\Users\Sachin Kumar Tiwari\PycharmProjects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -137,7 +144,36 @@
       <option name="presentableId" value="Default" />
       <updated>1757569792183</updated>
     </task>
+    <task id="LOCAL-00001" summary="Para_bank">
+      <option name="closed" value="true" />
+      <created>1758124348342</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758124348342</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Para_bank">
+      <option name="closed" value="true" />
+      <created>1758124356528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758124356528</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Para_bank">
+      <option name="closed" value="true" />
+      <created>1758124363077</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758124363077</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Para_bank" />
+    <option name="LAST_COMMIT_MESSAGE" value="Para_bank" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

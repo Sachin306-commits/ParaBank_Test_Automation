@@ -1,5 +1,5 @@
-from Page_Pom.forgot_account import forgot_account
-from Page_Pom.forgot_account_with_new_user import forgot_new_account
+from Page_Pom.Positive_POM.forgot_account import forgot_account
+from Page_Pom.Negative_POM.forgot_account_with_new_user import forgot_new_account
 import pytest
 import json
 import time
@@ -31,4 +31,5 @@ def test_forgot_account(browserInstance):
     display_error_message = f"Error!\nThe customer information provided could not be found."
     error_message.strip() == display_error_message.strip(), \
             f"Expected '{error_message}' but got: '{display_error_message}'"
+    time.sleep(20)
 

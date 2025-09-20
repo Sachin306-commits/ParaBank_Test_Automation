@@ -1,10 +1,8 @@
 import json
 import time
-
 import pytest
-from Utils.locators import Locators
-from Utils.selenium_helpers import safe_click, safe_get_text
-from Page_Pom.register_with_existing_user import existing_user
+from Page_Pom.Negative_POM.register_with_existing_user import existing_user
+
 test_data_path = r'C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Data\test_data.json'
 with open(test_data_path) as f:
     test_data = json.load(f)

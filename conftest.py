@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.wait import WebDriverWait
 
 from Utils.selenium_helpers import capture_screenshot
-
+import allure
 
 def pytest_addoption(parser):
     parser.addoption(
@@ -32,6 +32,24 @@ def browserInstance(request):
 
     driver.quit()
 
+
+@pytest.hookimpl(tryfirst=True, hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    # Run all other hooks to get the report
+    outcome = yield
+    report = outcome.get_result()
+
+    if report.when == "call" and report.failed:
+        driver = item.funcargs.get("browserInstance")  # get browser fixture
+        if driver:
+            screenshot = driver.get_screenshot_as_png()
+            allure.attach(
+                screenshot,
+                name="screenshot_on_failure",
+                attachment_type=allure.attachment_type.PNG
+            )
+
+'''
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item):
     pytest_html = item.config.pluginmanager.getplugin('html')
@@ -58,4 +76,4 @@ def pytest_runtest_makereport(item):
 def _capture_screenshot(driver, file_name):
     driver.get_screenshot_as_file(file_name)
 
-
+'''

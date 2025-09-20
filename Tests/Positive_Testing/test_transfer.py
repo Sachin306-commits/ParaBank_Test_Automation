@@ -1,5 +1,5 @@
-from Page_Pom.login import Login_user
-from Page_Pom.transfer_funds import transfer
+from Page_Pom.Positive_POM.login import Login_user
+from Page_Pom.Positive_POM.transfer_funds import transfer
 import json
 import time
 import pytest

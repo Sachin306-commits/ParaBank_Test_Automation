@@ -33,6 +33,7 @@ class Locators:
     create_account = "//input[contains(@value,'Open New Account')]"
     money_selection = "//select[contains(@id,'fromAccountId')]"
     successfuly_checking_creation ="//div[@id='openAccountResult']//h1"
+    select_amount ="//select[@id='fromAccountId']"
 
     #forgot account
     forgot = "//a[contains(text(),'Forgot login info?')]"
@@ -62,6 +63,37 @@ class Locators:
     to_bank = "//select[@id ='toAccountId']"
     transfer_money_button = "//input[@type ='submit']"
     transfer_completion_message ="//div[@id ='showResult']"
+
+    #bill pay
+    bill_pay_click = "//a[contains(text(),'Bill Pay')]"
+    payee = "//input[contains(@name,'payee.name')]"
+    payee_number = "//input[contains(@name,'payee.phoneNumber')]"
+    payee_account = "//input[contains(@name,'payee.accountNumber')]"
+    payee_confirm_account = "//input[contains(@name,'verifyAccount')]"
+    amount = "//input[contains(@name,'amount')]"
+    select_account = "//select[contains(@name,'fromAccountId')]"
+    send_money = "//input[contains(@value,'Send Payment')]"
+    payee_address = "//input[@name ='payee.address.street']"
+    payee_city = "//input[@name ='payee.address.city']"
+    payee_state = "//input[@name ='payee.address.state']"
+    payee_zipcode ="//input[@name ='payee.address.zipCode']"
+    bill_payment_message = "//div[@id='billpayResult']"
+
+    # Contact_us
+    contact = "//a[@href='contact.htm']"
+    contact_name ="//input[@id='name']"
+    contact_email = "//input[@id='email']"
+    contact_phone ="//input[@id='phone']"
+    contact_message = "//textarea[@id='message']"
+    contact_send_button = "//input[@type='submit']"
+    welcome_note ="//div[@id='rightPanel']"
+
+    #Request Loan
+    click_on_loan_request = "//a[@href='requestloan.htm']"
+    loan_amount="//input[@id='amount']"
+    down_payment = "//input[@id='downPayment']"
+    select_account_loan = "//select[@id='fromAccountId']"
+    loan_apply = "//input[@value='Apply Now']"
 
 
 

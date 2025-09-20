@@ -2,9 +2,7 @@ import json
 import time
 
 import pytest
-from Utils.locators import Locators
-from Utils.selenium_helpers import safe_click, safe_get_text
-from Page_Pom.login_with_wrong_user import wrong_user
+from Page_Pom.Negative_POM.login_with_wrong_user import wrong_user
 
 test_data_path = r'C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Data\test_data.json'
 with open(test_data_path) as f:

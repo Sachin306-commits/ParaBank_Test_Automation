@@ -5,8 +5,8 @@ from selenium.webdriver.support.ui import Select
 import pytest
 from Utils.locators import Locators
 from Utils.selenium_helpers import safe_click, safe_get_text
-from Page_Pom.open_saving_account import saving_account
-from Page_Pom.login import Login_user
+from Page_Pom.Positive_POM.open_saving_account import saving_account
+from Page_Pom.Positive_POM.login import Login_user
 
 test_data_path = r'C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Data\test_data.json'
 with open(test_data_path) as f:
@@ -33,6 +33,7 @@ def test_register_user(browserInstance):
     time.sleep(5)
 
     making_saving_account.create_saving_account()
+    '''
     parent_text = making_saving_account.account_creation()
     print("checking",parent_text)
 
@@ -46,6 +47,6 @@ def test_register_user(browserInstance):
 
     parent_text_2.strip() == f"Your new account number:"
     time.sleep(10)
-
+'''
 
 

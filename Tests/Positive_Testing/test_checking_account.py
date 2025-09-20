@@ -2,10 +2,8 @@ import json
 import time
 from selenium.webdriver.support.ui import Select
 import pytest
-from Utils.locators import Locators
-from Utils.selenium_helpers import safe_click, safe_get_text
-from Page_Pom.open_checking_account import checking_Account
-from Page_Pom.login import Login_user
+from Page_Pom.Positive_POM.open_checking_account import checking_Account
+from Page_Pom.Positive_POM.login import Login_user
 
 test_data_path = r'C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Data\test_data.json'
 with open(test_data_path) as f:
@@ -31,7 +29,7 @@ def test_register_user(browserInstance):
     money_selection = checking_account_create.select_amount()
     print(account_selection)
     checking_account_create.create_saving_account()
-    message = checking_account_create.successfuly_message()
+    message = checking_account_create.successfully_message()
     print(message)
     assert message == "Account Opened!"
 

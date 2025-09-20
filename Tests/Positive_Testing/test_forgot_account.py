@@ -1,7 +1,7 @@
 import json
 import time
 import pytest
-from Page_Pom.forgot_account import forgot_account
+from Page_Pom.Positive_POM.forgot_account import forgot_account
 
 
 test_data_path = r'C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Data\test_data.json'

@@ -3,8 +3,8 @@ import json
 
 from numpy.ma.core import logical_not
 
-from Page_Pom.login import Login_user
-from Page_Pom.account_overview import account_overview
+from Page_Pom.Positive_POM.login import Login_user
+from Page_Pom.Positive_POM.account_overview import account_overview
 from Utils.selenium_helpers import safe_click
 test_data_path = r'C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Data\test_data.json'
 with open(test_data_path) as f:
