@@ -40,6 +40,4 @@ def test_register_user(browserInstance):
     existing_welcome_error_message = login_with_existing_user.existing_error_message()
     assert existing_welcome_error_message == Existing_error_message, \
         f"Expected '{Existing_error_message}' but got: '{existing_welcome_error_message}'"
-
-    print(existing_welcome_error_message)
-    print(Existing_error_message)
+    time.sleep(10)
