@@ -1,11 +1,9 @@
 import pytest
 import json
 
-from numpy.ma.core import logical_not
 
 from Page_Pom.Positive_POM.login import Login_user
 from Page_Pom.Positive_POM.account_overview import account_overview
-from Utils.selenium_helpers import safe_click
 test_data_path = r'C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Data\test_data.json'
 with open(test_data_path) as f:
     test_data = json.load(f)
@@ -21,7 +19,7 @@ def test_account_over_view(browserInstance):
     driver.get("https://parabank.parasoft.com/parabank/index.htm")
     browserInstance.maximize_window()
     login_account = Login_user(browserInstance)
-    login_account.enter_login_name(user_data["user_name_1"])
+    login_account.enter_login_name(user_data["user_base_name"])
     login_account.enter_login_password(user_data["user_confirm_password"])
     login_account.click_on_submit_button()
     overview = account_overview(browserInstance)

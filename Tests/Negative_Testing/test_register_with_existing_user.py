@@ -28,7 +28,7 @@ def test_register_user(browserInstance):
     login_with_existing_user.zip_code(user_data["user_zip_code"])
     login_with_existing_user.phone(user_data["user_phone_no"])
     login_with_existing_user.ssn(user_data["user_ssn"])
-    login_with_existing_user.user_name(user_data["user_name_1"])
+    login_with_existing_user.user_name(user_data["user_base_name"])
     login_with_existing_user.password(user_data["user_password"])
     login_with_existing_user.confirm_password(user_data["user_confirm_password"])
     time.sleep(1)

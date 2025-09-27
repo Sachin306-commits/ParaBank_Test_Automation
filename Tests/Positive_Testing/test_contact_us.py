@@ -16,7 +16,7 @@ def test_contact_us(browserInstance):
     browserInstance.get("https://parabank.parasoft.com/parabank/index.htm")
     browserInstance.maximize_window()
     user_login = Login_user(browserInstance)
-    user_login.enter_login_name(user_data["user_name_1"])
+    user_login.enter_login_name(user_data["user_base_name"])
     user_login.enter_login_password(user_data["user_confirm_password"])
     user_login.click_on_submit_button()
 

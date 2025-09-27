@@ -23,7 +23,7 @@ def test_register_user(browserInstance):
     driver.get("https://parabank.parasoft.com/parabank/index.htm")
     browserInstance.maximize_window()
     Login_user_check = Login_user(browserInstance)
-    Login_user_check.enter_login_name(user_data["user_name_1"])
+    Login_user_check.enter_login_name(user_data["user_base_name"])
     Login_user_check.enter_login_password(user_data["user_confirm_password"])
     Login_user_check.click_on_submit_button()
     making_saving_account = saving_account(browserInstance)

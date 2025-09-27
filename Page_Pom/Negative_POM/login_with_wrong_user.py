@@ -9,7 +9,7 @@ class wrong_user:
     def wrong_userID(self,existing_username):
         safe_send_keys(self.driver,Locators.login_username,existing_username)
 
-    @allure.step("Enter user wrong password :{existing_username} ")
+    @allure.step("Enter user wrong password :{password} ")
     def wrong_password(self,password):
         safe_send_keys(self.driver,Locators.login_password,password)
 

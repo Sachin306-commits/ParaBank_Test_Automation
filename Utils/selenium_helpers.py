@@ -39,9 +39,13 @@ def safe_click(driver, xpath, timeout=30):
             time.sleep(10)
 
 def safe_send_keys(driver, xpath, value, timeout=30):
-    WebDriverWait(driver, timeout).until(
+    element = WebDriverWait(driver, timeout).until(
         EC.presence_of_element_located((By.XPATH, xpath))
-    ).send_keys(value)
+    )
+    element.clear()
+    element.send_keys(value)
+    return element
+
 
 def safe_get_text(driver, xpath, timeout=30):
     return WebDriverWait(driver, timeout).until(
@@ -70,9 +74,3 @@ def safe_select(driver, xpath, value, by="text", timeout=30):
         except StaleElementReferenceException:
             time.sleep(2)
 
-def check_login_error(driver):
-    error = WebDriverWait(driver, 5).until(
-        EC.presence_of_element_located(Locators.error_message)
-
-    )
-    assert error.is_displayed(), " Error message not shown for invalid login"

@@ -94,6 +94,15 @@ class Locators:
     down_payment = "//input[@id='downPayment']"
     select_account_loan = "//select[@id='fromAccountId']"
     loan_apply = "//input[@value='Apply Now']"
+    #request_loan = "//div[@id='requestLoanResult']"
+    loan_req = "//div[@id='requestLoanResult']//h1"
+    loan_provider = "(//tr)[5]"
+    loan_date ="(//tr)[6]"
+    loan_status = "(//tr)[7]"
+    loan_error = "//div[@id='loanRequestDenied']"
+    # about us page
+    about_us = "//div[@id='rightPanel']"
+    click_on = "//li[@class='aboutus']"
 
 
 

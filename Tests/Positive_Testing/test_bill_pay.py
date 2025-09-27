@@ -20,7 +20,7 @@ def test_Bill_Pay(browserInstance):
 
     # Step 1: Login
     login_user = Login_user(driver)
-    login_user.enter_login_name(user_data["user_name_1"])
+    login_user.enter_login_name(user_data["user_base_name"])
     login_user.enter_login_password(user_data["user_confirm_password"])
     login_user.click_on_submit_button()
 

@@ -5,8 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb10e08d-4a57-45f5-81bc-fb72e8fe2bd5" name="Changes" comment="Para_bank">
+      <change afterPath="$PROJECT_DIR$/Page_Pom/Negative_POM/Request_loan_with_high_amount.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/about_us.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/login_in_incognito.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Page_Pom/Positive_POM/login_with_enter_key.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/API_Testing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Negative_Testing/test_Request_loan_with_high_amount.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_about_us.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_login_in_incognito.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_login_with_enter_key.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_clients/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/test_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/test_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/Negative_POM/forgot_account_with_new_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Negative_POM/forgot_account_with_new_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Pom/Negative_POM/login_with_wrong_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Pom/Negative_POM/login_with_wrong_user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Negative_Testing/test_register_with_existing_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Negative_Testing/test_register_with_existing_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Positive_Testing/test_account_overview.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_account_overview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Positive_Testing/test_bill_pay.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_bill_pay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Positive_Testing/test_checking_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_checking_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Positive_Testing/test_contact_us.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_contact_us.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Positive_Testing/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Positive_Testing/test_open_saving_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_open_saving_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Positive_Testing/test_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Positive_Testing/test_request_loan.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_request_loan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Positive_Testing/test_transfer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Positive_Testing/test_transfer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/selenium_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/selenium_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +60,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in test_account_overview.py.executor": "Run",
     "Python tests.Python tests in test_register.py.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Sachin Kumar Tiwari/PycharmProjects/ParaBank_Testing/Page_Pom/Positive_POM"
+    "last_opened_file_path": "C:/Users/Sachin Kumar Tiwari/PycharmProjects/E2E_Automation_Testing_for_e-commerce",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -74,7 +102,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_register.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in C:/Users/Sachin Kumar Tiwari/PycharmProjects/ParaBank_Testing/Tests/test_register.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Automation" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,9 +117,41 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_account_overview.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests/Positive_Testing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/Positive_Testing/test_account_overview.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_register.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests/Positive_Testing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/Positive_Testing/test_register.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests in test_register.py" />
+        <item itemvalue="Python tests.Python tests in test_account_overview.py" />
+        <item itemvalue="Python tests.Python tests in C:/Users/Sachin Kumar Tiwari/PycharmProjects/ParaBank_Testing/Tests/test_register.py" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758379882752</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Para_bank">
+      <option name="closed" value="true" />
+      <created>1758390376523</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758390376524</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
