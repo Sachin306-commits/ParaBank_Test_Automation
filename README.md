@@ -15,5 +15,17 @@ The framework covers **UI Testing, REST API Testing, Database Validation**, and 
 - ✅ **CI/CD ready** (Jenkins/GitHub Actions/GitLab CI)  
 
 ---
+## 📂 Project Structure
 
-
+ParaBank_Testing/
+│── Data/ # Test data files (JSON, CSV, etc.)
+│── Page_Pom/ # Page Object Model classes
+│── Reports/ # Test execution reports
+│── Tests/ # Test cases
+│ ├── Positive_Testing/
+│ ├── Negative_Testing/
+│ ├── API/ # API test cases
+│── api_clients/ # API client utilities
+│── capture_screenshot/ # Screenshots on failure
+│── conftest.py # Pytest fixtures
+│── requirements.txt # Python dependencies
