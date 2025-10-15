@@ -22,11 +22,13 @@
       "message": "Hi There i want my money back",
       "loan_amount": "1000",
       "down_payment": "12",
-      "high_amount_loan": "1000000"
-
-
-
+      "high_amount_loan": "1000000",
+      "phoneNumber": "7903809668",
+      "accountNumber": "15342",
+      "amount": "1000",
+      "accountId": "17673"
     },
+
 
     {
       "user_first_name": "Rajni Kumari",

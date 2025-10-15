@@ -25,7 +25,7 @@ def test_register_user(browserInstance,data):
     browserInstance.maximize_window()
     registration = Register(browserInstance)
     registration.click_on_register_page()
-    unique_username = f"{data['user_base_name']}_{int(time.time())}"
+    unique_username = f"{data['user_base_name']}" #_{int(time.time())}
     registration.first_name(data["user_first_name"])
     registration.last_name(data["user_second_name"])
     registration.address(data["user_address"])

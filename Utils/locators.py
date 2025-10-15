@@ -104,5 +104,12 @@ class Locators:
     about_us = "//div[@id='rightPanel']"
     click_on = "//li[@class='aboutus']"
 
+    #Logout
+    logout_button = "//a[contains(text(),'Log Out')]"
+
+    #Account overview
+    user_accounts = "//div[@id ='showOverview']"
+
+
 
 
