@@ -1,0 +1,2 @@
+Status Code: 200
+Response Body: [{"id":14454,"customerId":12767,"type":"CHECKING","balance":315.50},{"id":14676,"customerId":12767,"type":"CHECKING","balance":100.00},{"id":14787,"customerId":12767,"type":"LOAN","balance":500.00}]

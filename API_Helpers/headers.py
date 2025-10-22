@@ -1,6 +1,7 @@
-def headers_():
-    headers = {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-    }
-    return headers
+class Headers:
+    @staticmethod
+    def get_headers():
+        return {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        }

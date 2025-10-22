@@ -1,7 +1,13 @@
-def send_post_request(url, params, headers, payload):
-    """
-    Generic reusable POST request function.
-    """
-    import requests
-    response = requests.post(url, params=params, json=payload, headers=headers)
-    return response
+import requests
+
+class RequestHandler:
+
+    @staticmethod
+    def send_post_request(url, params, headers, payload):
+        response = requests.post(url, params=params, json=payload, headers=headers)
+        return response
+
+    @staticmethod
+    def send_get_request(url, headers, params=None, payload=None):
+        response = requests.get(url, headers=headers, params=params, json=payload)
+        return response

@@ -1,0 +1,2 @@
+Response Status  200
+Response Body: {"id":12767,"firstName":"ghada","lastName":"Hussien@13","address":{"street":"123 Main Street","city":"Cairo","state":"Cairo","zipCode":"11765"},"phoneNumber":"01122334455","ssn":"343435345"}

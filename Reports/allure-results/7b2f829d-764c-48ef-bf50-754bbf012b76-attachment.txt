@@ -1,0 +1,2 @@
+Status Code: 200
+Response Body: {"responseDate":1761066874214,"loanProviderName":"ParaBank","approved":true,"accountId":27885}

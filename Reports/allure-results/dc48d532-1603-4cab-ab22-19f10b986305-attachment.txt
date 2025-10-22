@@ -1,0 +1,9 @@
+Status Code: 200
+
+Media type
+application/json
+Controls Accept header.
+
+Example Value
+Schema
+[]

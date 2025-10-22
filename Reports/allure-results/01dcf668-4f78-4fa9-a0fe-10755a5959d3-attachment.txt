@@ -1,0 +1,2 @@
+Status Code: 200
+Response Body: [{"id":18028,"accountId":14454,"type":"Debit","date":1760659200000,"amount":122.00,"description":"Funds Transfer Sent"},{"id":18139,"accountId":14454,"type":"Credit","date":1760659200000,"amount":122.00,"description":"Funds Transfer Received"}]
