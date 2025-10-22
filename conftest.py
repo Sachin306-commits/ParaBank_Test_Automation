@@ -43,22 +43,28 @@ def browserInstance(request):
     yield driver
     driver.quit()
 
-@pytest.hookimpl(tryfirst=True, hookwrapper=True)
-def pytest_runtest_makereport(item, call):
-    # Run all other hooks to get the report
+@pytest.hookimpl(hookwrapper=True)
+def pytest_runtest_makereport(item):
+    pytest_html = item.config.pluginmanager.getplugin('html')
     outcome = yield
     report = outcome.get_result()
+    extra = getattr(report, "extra", [])
 
-    if report.when == "call" and report.failed:
-        driver = item.funcargs.get("browserInstance")  # get browser fixture
-        if driver:
-            screenshot = driver.get_screenshot_as_png()
-            allure.attach(
-                screenshot,
-                name="screenshot_on_failure",
-                attachment_type=allure.attachment_type.PNG
-            )
+    if report.when in ("call", "setup"):
+        xfail = hasattr(report, "wasxfail")
+        if (report.skipped and xfail) or (report.failed and not xfail):
+            driver = getattr(item, "driver", None)
+            if driver:
+                reports_dir = os.path.join(os.path.dirname(__file__), 'reports')
+                os.makedirs(reports_dir, exist_ok=True)
+                file_name = os.path.join(reports_dir, report.nodeid.replace("::", "_") + ".png")
+                print("Saving screenshot to:", file_name)
+                _capture_screenshot(driver, file_name)
 
+                html = f'<div><img src="{file_name}" style="width:304px; height:228px;" ' \
+                       f'onclick="window.open(this.src)" align="right"/></div>'
+                extra.append(pytest_html.extras.html(html))
+        report.extra = extra
 
 def _capture_screenshot(driver, file_name):
     driver.get_screenshot_as_file(file_name)
