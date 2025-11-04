@@ -5,25 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb10e08d-4a57-45f5-81bc-fb72e8fe2bd5" name="Changes" comment="Para_bank">
-      <change afterPath="$PROJECT_DIR$/Page_Pom/Negative_POM/Register_field_misaligned.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QA_Space/Automation_Framework_documentation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QA_Space/QA_Practices.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QA_Space/Release 1/Defect_Summary.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QA_Space/Release 1/Release_1.0.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QA_Space/Release 1/Test_Execution_report.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QA_Space/Release 1/Test_Plan.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QA_Space/Release 1/Test_Scenarios.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QA_Space/Test_Strategy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Negative_Testing/test_register_from_misalignment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Helpers/URL.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Helpers/URL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Helpers/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Helpers/response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/test_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/test_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/API_Testing/GET_TESTING/test_transaction_by_month_and_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/API_Testing/GET_TESTING/test_transaction_by_month_and_account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Negative_Testing/test_login_with_wrong_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Negative_Testing/test_login_with_wrong_user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/selenium_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/selenium_helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
