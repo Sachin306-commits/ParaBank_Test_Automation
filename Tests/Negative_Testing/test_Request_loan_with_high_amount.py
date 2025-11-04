@@ -10,16 +10,16 @@ with open(test_data_path) as f:
     test_list = test_data["data"]
 
 user_data = test_list[0]
-expected_username = user_data["user_name_1"]
+expected_username = user_data["user_base_name"]
 @pytest.mark.smoke
-def test_Request_Highest_loan(browserInstance):
+def test_Request_Highest_loan(browserInstance,creds):
     driver = browserInstance
     browserInstance.get("https://parabank.parasoft.com/parabank/index.htm")
     browserInstance.maximize_window()
 
     login_user = Login_user(browserInstance)
-    login_user.enter_login_name(user_data["user_base_name"])
-    login_user.enter_login_password(user_data["user_confirm_password"])
+    login_user.enter_login_name(creds["user_name_1"])
+    login_user.enter_login_password(creds["user_password"])
     login_user.click_on_submit_button()
 
     loan_request = Request_Highest_Loan(browserInstance)

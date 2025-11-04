@@ -10,7 +10,7 @@ with open(test_data_path) as f:
     test_list = test_data["data"]
 
 user_data = test_list[0]
-expected_username = user_data["user_name_1"]
+expected_username = user_data["user_base_name"]
 @pytest.mark.smoke
 def test_Request_loan(browserInstance):
     driver = browserInstance

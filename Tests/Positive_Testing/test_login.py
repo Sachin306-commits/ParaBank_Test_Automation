@@ -4,21 +4,25 @@ import pytest
 from Page_Pom.Positive_POM.login import Login_user
 
 
-test_data_path = r'C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Data\test_data.json'
-with open(test_data_path) as f:
+# Load login data
+with open(r'C:\Users\Sachin Kumar Tiwari\PycharmProjects\ParaBank_Testing\Data\test_data.json') as f:
     test_data = json.load(f)
-    test_list = test_data["data"]
+    login_data = test_data["login_data"]
 
-user_data = test_list[1]
 
 @pytest.mark.smoke
-def test_register_user(browserInstance):
+@pytest.mark.login
+@pytest.mark.parametrize("creds", login_data)
+def test_login_user(browserInstance, creds):
     driver = browserInstance
     driver.get("https://parabank.parasoft.com/parabank/index.htm")
-    browserInstance.maximize_window()
-    Login_user_check =Login_user(browserInstance)
-    Login_user_check.enter_login_name(user_data["user_base_name"])
-    Login_user_check.enter_login_password(user_data["user_confirm_password"])
-    Login_user_check.click_on_submit_button()
-    time.sleep(4)
+    driver.maximize_window()
 
+    login = Login_user(driver)
+    login.enter_login_name(creds["user_name_1"])
+    login.enter_login_password(creds["user_password"])
+    login.click_on_submit_button()
+    time.sleep(3)
+
+    # Add validation — you can check element visibility or welcome text
+    assert "overview" in driver.current_url.lower(), "Login failed — not redirected to account overview."
