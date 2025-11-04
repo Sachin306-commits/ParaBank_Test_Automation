@@ -4,3 +4,4 @@ pytest-xdist
 selenium
 requests
 allure-pytest
+jsonschema
