@@ -205,3 +205,22 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# ---------- Project Specific Ignores ----------
+
+# PyCharm project settings
+.idea/
+
+# Test reports and logs
+Reports/
+Reports/allure-results/
+Reports/report.html
+*.html
+
+# Selenium/pytest cache
+__pycache__/
+.pytest_cache/
+
+# Temporary test outputs
+*.log
+*.tmp
+*.bak
