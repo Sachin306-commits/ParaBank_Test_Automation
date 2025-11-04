@@ -70,3 +70,7 @@ class URL:
     def request_loan():
         #https://parabank.parasoft.com/parabank/services/bank/requestLoan?customerId=12767&amount=122&downPayment=2&fromAccountId=14232
         return f"{URL.BASE_URL}/requestLoan/"
+    @staticmethod
+    def _put_method_not_allowed_url():
+        #https://parabank.parasoft.com/parabank/transfer.htm
+        return f"{URL.BASE_URL}"

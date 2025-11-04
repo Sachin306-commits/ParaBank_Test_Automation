@@ -1,5 +1,7 @@
 import time
 import os
+
+from selenium.common.exceptions import StaleElementReferenceException, TimeoutException
 from selenium.common import StaleElementReferenceException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -73,4 +75,35 @@ def safe_select(driver, xpath, value, by="text", timeout=30):
             return select.first_selected_option.text
         except StaleElementReferenceException:
             time.sleep(2)
+
+def safe_get_location(driver, xpath, axis='y', timeout=30, retries=3):
+        """
+        Safely get the x or y location of a web element.
+        axis = 'x' or 'y' (default 'y')
+        """
+        for attempt in range(retries):
+            try:
+                # Wait for element presence
+                element = WebDriverWait(driver, timeout).until(
+                    EC.presence_of_element_located((By.XPATH, xpath))
+                )
+                location = element.location
+
+                # Return requested coordinate
+                if axis.lower() == 'x':
+                    return location['x']
+                elif axis.lower() == 'y':
+                    return location['y']
+                else:
+                    raise ValueError("Axis must be either 'x' or 'y'")
+
+            except StaleElementReferenceException:
+                print(f"[Retry {attempt + 1}] Element became stale, retrying...")
+                time.sleep(2)
+
+            except TimeoutException:
+                print(f"[Timeout] Element not found for xpath: {xpath}")
+                break
+
+        raise Exception(f"safe_get_location failed after {retries} attempts for xpath: {xpath}")
 

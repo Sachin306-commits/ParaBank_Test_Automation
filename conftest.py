@@ -7,6 +7,7 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.edge.service import Service as EdgeService
 from selenium.webdriver.edge.options import Options as EdgeOptions
+import os
 
 def pytest_addoption(parser):
     parser.addoption("--browser_name", action="store", default="chrome", help="Browser: chrome or firefox or edge")

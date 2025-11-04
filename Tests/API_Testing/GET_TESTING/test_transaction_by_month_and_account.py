@@ -27,3 +27,4 @@ def test_transaction_by_month_and_account():
         validate(instance=response_json, schema=schema)
     else:
         print("⚠️ Empty list — no transactions found, skipping schema validation.")
+    print("BUG-101 : API timeout in transfer funds ")

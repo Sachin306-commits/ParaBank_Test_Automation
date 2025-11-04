@@ -29,6 +29,6 @@ def test_register_user(browserInstance):
     # Assertion
     Error_message = wrong_user_login.error_message()
     assert Error_message.strip() == Error_note.strip(), \
-        f"Expected '{Error_note}' but got: '{Error_message}'"
+        f"Expected '{Error_note}' but got: '{Error_message}'""BUG-103: Field alignment issue on login form"""
     print(Error_note)
     print(Error_message)
